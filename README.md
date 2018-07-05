@@ -1,33 +1,14 @@
-Beaker Browser
-======
-[![Backers on Open Collective](https://opencollective.com/beaker/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/beaker/sponsors/badge.svg)](#sponsors)
+Scout Browser (Experimental)
+============================
+
+[![Scout Browser Badge](https://img.shields.io/badge/Scout%20Browser-Experimental-orange.svg)](#badge) 
 
 ![logo.png](build/icons/256x256.png)
 
-Beaker is an experimental peer-to-peer Web browser. It adds new APIs for building hostless applications, while remaining compatible with the rest of the Web. [Visit the website.](https://beakerbrowser.com/)
+The Scout Browser is an experimental peer-to-peer Web browser forked from the beaker browser project. It adds new APIs for building hostless applications, using ipfs & our sister search engine. [Visit the Search Engine.](https://scout.click/)
 
-Please feel free to open usability issues. Join us at #beakerbrowser on Freenode.
+Join us for discussions at #scoutbrowser on Freenode.
 
-### Sponsors
-
-Sponsors support this project by contributing $100 a month or more. [Become a sponsor](https://opencollective.com/beaker#sponsor)
-
-<a href="https://opencollective.com/beaker/sponsor/0/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/1/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/2/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/3/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/4/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/5/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/6/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/7/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/8/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/beaker/sponsor/9/website" target="_blank"><img src="https://opencollective.com/beaker/sponsor/9/avatar.svg"></a>
-
-### Backers
-
-Backers support this project by contributing $2 to $99 a month. [Become a backer](https://opencollective.com/beaker#backer)
-
-<a href="https://opencollective.com/beaker#backers" target="_blank"><img src="https://opencollective.com/beaker/backers.svg?width=890"></a>
 
 ## Table of Contents
 
@@ -42,9 +23,6 @@ Backers support this project by contributing $2 to $99 a month. [Become a backer
   - [Env Vars](#env-vars)
 - [Known issues](#known-issues)
   - [tmux](#tmux)
-- [Contributors](#contributors)
-  - [Backers](#backers)
-  - [Sponsors](#sponsors)
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -53,7 +31,7 @@ Backers support this project by contributing $2 to $99 a month. [Become a backer
 
 ### Binaries
 
-**Visit the [Releases Page](https://github.com/beakerbrowser/beaker/releases) to find the installer you need.**
+**Visit the [Releases Page](https://github.com/royhodge/scoutbrowser/releases) to find the installer you need.**
 
 ### Building from source
 
@@ -78,8 +56,8 @@ npm install -g gulp
 To build:
 
 ```bash
-git clone https://github.com/beakerbrowser/beaker.git
-cd beaker
+git clone https://github.com/royhodge/scoutbrowser.git
+cd scoutbrowser
 npm install
 npm run rebuild # see https://github.com/electron/electron/issues/5851
 npm start
@@ -98,7 +76,7 @@ If you're doing development, `npm run watch` to have assets build automatically.
 
 ## Documentation
 
-Looking to work on Beaker? [Watch this video](https://www.youtube.com/watch?v=YuE9OO-ZDYo) and take a look at [the build notes](./build-notes.md).
+Looking to work on Scout? [Watch this video](https://www.youtube.com/watch?v=YuE9OO-ZDYo) and take a look at [the build notes](./build-notes.md).
 
 - **Web APIs**
   - [DatArchive](https://beakerbrowser.com/docs/apis/dat.html)
@@ -125,15 +103,9 @@ Looking to work on Beaker? [Watch this video](https://www.youtube.com/watch?v=Yu
 
 
 ## Known issues
-
 ### tmux
 
 Launching from tmux is known to cause issues with GUI apps in macOS. On Beaker, it may cause the application to hang during startup.
-
-## Contributors
-
-This project exists thanks to all the people who contribute. [[Contribute]](CONTRIBUTING.md).
-[![](https://opencollective.com/beaker/contributors.svg?width=890)](https://github.com/beakerbrowser/beaker/graphs/contributors)
 
 ## License
 
