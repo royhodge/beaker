@@ -145,9 +145,9 @@ async function onUpdateSearchQuery (q) {
     // add a DuckDuckGo search to the results
     const ddgRes = {
       title: query,
-      targetUrl: `https://duckduckgo.com?q=${encodeURIComponent(query)}`,
+      targetUrl: `http://scout.click?q=${encodeURIComponent(query)}`,
       icon: 'fa fa-search',
-      label: 'Search DuckDuckGo',
+      label: 'Search Scout.Click',
       class: 'ddg'
     }
     searchResults.push(ddgRes)
@@ -254,7 +254,7 @@ function update () {
             <div class="beta-info">
               <i class="fa fa-bolt"></i>
               <p>
-                You${"'"}re using a beta version of Beaker.
+                You${"'"}re using a beta version of Browser.
                 <a href="https://www.surveymonkey.com/r/NK9LGQ3">Share feedback</a>
                 or
                 <a href="https://github.com/beakerbrowser/beaker/issues/new?labels=0.8-beta-feedback&template=issue_template_0.8_beta.md">Report an issue</a>.
