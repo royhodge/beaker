@@ -1,6 +1,6 @@
 {
   "bin": "./tasks/start-cli.js",
-  "name": "beakerbrowser",
+  "name": "scoutbrowser",
   "devDependencies": {
     "browserify": "^13.0.1",
     "electron": "2.0.2",
@@ -27,12 +27,12 @@
     "rcedit": "^0.5.0"
   },
   "build": {
-    "appId": "com.pfrazee.beaker-browser",
+    "appId": "com.rhodge.scout-browser",
     "asar": true,
     "asarUnpack": [
       "./node_modules/sodium-native/**"
     ],
-    "copyright": "© 2018, Blue Link Labs",
+    "copyright": "© 2018, UniBit Labs",
     "npmRebuild": false,
     "protocols": [
       {
@@ -52,7 +52,7 @@
     "appImage": {
       "category": "Network",
       "desktop": {
-        "Name": "Beaker Browser",
+        "Name": "Scout Browser",
         "GenericName": "Web Browser",
         "Type": "Application",
         "Terminal": false,
@@ -85,10 +85,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/beakerbrowser/beaker"
+    "url": "https://github.com/royhodge/scoutbrowser"
   },
   "bugs": {
-    "url": "https://github.com/beakerbrowser/beaker/issues"
+    "url": "https://github.com/royhodge/scoutbrowser/issues"
   },
-  "homepage": "https://beakerbrowser.com/"
+  "homepage": "http://scout.click/"
 }
