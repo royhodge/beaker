@@ -140,7 +140,7 @@ function renderOnStartupSettings () {
       <h2 id="on-startup" class="subtitle-heading">Startup settings</h2>
 
       <p>
-        When Beaker starts
+        When The Scout Browser starts
       </p>
 
       <div class="radio-group">
@@ -188,7 +188,7 @@ function renderAnalyticsSettings () {
 
   return yo`
     <div class="section analytics">
-      <h2 class="subtitle-heading">Beaker Analytics</h2>
+      <h2 class="subtitle-heading">Scout Browser Analytics</h2>
 
       <label class="toggle">
         <input checked=${settings.analytics_enabled == 1 ? 'true' : 'false'} type="checkbox" onchange=${toggle} />
@@ -226,7 +226,7 @@ function renderInformation () {
   return yo`
     <div class="view">
       <div class="section">
-        <h2 id="information" class="subtitle-heading">About Beaker</h2>
+        <h2 id="information" class="subtitle-heading">About The Scout Browsers Core System Components</h2>
         <ul>
           <li>Version: ${browserInfo.version} Electron: ${browserInfo.electronVersion} - Chromium: ${browserInfo.chromiumVersion} - Node: ${browserInfo.nodeVersion}</li>
           <li>User data: ${browserInfo.paths.userData}</li>
@@ -235,9 +235,9 @@ function renderInformation () {
       <div class="section">
         <h2 class="subtitle-heading">Get help</h2>
         <ul>
-          <li><a href="https://beakerbrowser.com/docs/using-beaker">Take a tour of Beaker</a></li>
-          <li><a href="https://beakerbrowser.com/docs">Read the documentation</a></li>
-          <li><a href="https://github.com/beakerbrowser/beaker/issues/new?labels=0.8-beta-feedback&template=ISSUE_TEMPLATE_0.8_BETA.md">Report an issue</a></li>
+          <li><a href="#">Take a tour of Beaker</a></li>
+          <li><a href="#">Read the documentation</a></li>
+          <li><a href="#">Report an issue</a></li>
         </ul>
       </div>
     </div>
@@ -262,7 +262,7 @@ function renderProtocolSettings () {
       <h2 id="protocol" class="subtitle-heading">Default browser settings</h2>
 
       <p>
-        Set Beaker as the default browser for:
+        Set Scout Browser as the default browser for:
       </p>
 
       ${Object.keys(defaultProtocolSettings).map(proto => yo`
@@ -285,12 +285,12 @@ function renderAutoUpdater () {
         <h2 id="auto-updater" class="subtitle-heading">Auto updater</h2>
 
         <div class="message info">
-          Sorry! Beaker auto-updates are only supported on the production build for MacOS and Windows.
+          Sorry! Scout Browser auto-updates are only supported on the production build for MacOS and Windows.
         </div>
 
         <p>
-          To get the most recent version of Beaker, you${"'"}ll need to <a href="https://github.com/beakerbrowser/beaker">
-          build Beaker from source</a>.
+          To get the most recent version of Scout, you${"'"}ll need to <a href="https://github.com/royhodge/scoutbrowser">
+          build Scout Browser from source</a>.
         </p>
       </div>`
   }
@@ -374,7 +374,7 @@ function renderAutoUpdater () {
           <button class="btn" disabled>Updating</button>
           <span class="version-info">
             <div class="spinner"></div>
-            Downloading the latest version of Beaker...
+            Downloading the latest version of Browser...
           </span>
           ${renderAutoUpdateCheckbox()}
         </div>
@@ -389,7 +389,7 @@ function renderAutoUpdater () {
           <button class="btn" onclick=${onClickRestart}>Restart now</button>
           <span class="version-info">
             <i class="fa fa-arrow-circle-o-up"></i>
-            <strong>New version available.</strong> Restart Beaker to install.
+            <strong>New version available.</strong> Restart Browser to install.
           </span>
           ${renderAutoUpdateCheckbox()}
         </div>
