@@ -3,7 +3,7 @@ Scout Browser (Experimental)
 
 [![Scout Browser Badge](https://img.shields.io/badge/Scout%20Browser-Experimental-orange.svg)](#badge) 
 
-![logo.png](build/icons/256x256.png)
+![homepagelogo.png](http://scout.click/userdata/homepagelogo.png)
 
 The Scout Browser is an experimental peer-to-peer Web browser forked from the beaker browser project. It adds new APIs for building hostless applications, using ipfs & our sister search engine. [Visit the Search Engine.](https://scout.click/)
 
